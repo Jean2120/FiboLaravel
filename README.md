@@ -12,6 +12,8 @@ As "$i" is initialized to "2" because the value of index 0 and 1 is already know
 What this for() function does is feed the $array in order to obtain the value of the index that we want.
 
 As will be seen below:
+
+
     0	0	
     1	1
     2	$arr[1] + $arr[0] = 1
@@ -32,17 +34,17 @@ Index: "n"
 IMPROVEMENTS:
 * It can be perfectly improved by adding json-type responses as an example:
 
-[
 
+[
     'state' => 'ok',
         'info' => [
         'data' => $array[$n],
         'status' => 200,
         'name' => 'OK',
         'message' => 'Success.'
-    ]
-    
+    ] 
 ]
+
 
 
 * Control of possible errors such as the use of letters when sending text instead of numbers in the route.
